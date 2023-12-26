@@ -1,2 +1,6 @@
 .env
 env/
+
+/VSCode-extension/node_modules
+/VSCode-extension/.vscode-test
+/VSCode-extension/out

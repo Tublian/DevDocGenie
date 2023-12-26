@@ -1,0 +1,61 @@
+{
+  "name": "devdocgenie",
+  "displayName": "DevDocGenie",
+  "description": "Extension for developer to chat with the deocumentations",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "chatContainer",
+          "title": "Chat",
+          "icon": "media/chat.svg"
+        }
+      ],
+      "chatContainer": [
+        {
+          "id": "chatView",
+          "title": "Chat",
+          "icon": "media/chat.svg"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "chatContainer.openChat",
+        "title": "Open Chat"
+      },
+      {
+        "command": "devdocgenie.helloWorld",
+        "title": "hello world"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3",
+    "@vscode/test-cli": "^0.0.4",
+    "@vscode/test-electron": "^2.3.8"
+  }
+}
