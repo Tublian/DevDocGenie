@@ -11,7 +11,7 @@ import os
 dotenv.load_dotenv()
 
 loader = WebBaseLoader(
-    web_paths=("https://lilianweng.github.io/posts/2023-06-23-agent/",),
+    web_paths=("https://eatwellabi.com/easy-kenyan-beef-pilau-rice-recipe/",),
     bs_kwargs=dict(
         parse_only=bs4.SoupStrainer(
             class_=("post-content", "post-title", "post-header")
