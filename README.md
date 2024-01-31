@@ -18,4 +18,13 @@ This dynamic approach guarantees up-to-date support, streamlining the developmen
 ## How it works
 
 
+## How to run the MVP
 
+1. Run Ollama locally.
+2. Run mistral when running for the first time.
+3. To run mistral execute `ollama run mistral`.
+4. Get inside the mvp folder.
+5. Run `python3 -m venv env` to create a virtual environment.
+6. Run `source env/bin/activate` for MAC users to activate the virtual environment.
+7. Run `pip install llama-index qdrant_client torch transformers` to install the dependencies.
+8. Run `python index.py` to execute the code.
